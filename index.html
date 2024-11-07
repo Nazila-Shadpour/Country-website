@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Switzerland's top tourist destinations, from the breathtaking Swiss Alps and charming cities to picturesque lakes and delicious cuisine">
+    <title>Country Website</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+
+		<a href="index.html" class="site-logo">Company
+			<!-- <img src="" alt="Logo"> -->
+		</a>
+
+		<nav class="site-navigation" id="site-navigation">
+
+			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+					<title>Menu Icon</title>
+					<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+				</svg>
+			</button>
+
+			<ul class="nav-menu" id="header-menu">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="places.html">Places</a></li>
+				<li><a href="food.html">Food</a></li>
+				<li><a href="credits.html">Credits</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main class="site-main">
+        <header class="page-header">
+            <h1>Switzerland</h1>
+            <video autoplay muted>
+                <source src="media/114594-701775953_small.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </header>
+        <section class="quote">
+            <blockquote>
+                <p>"Switzerland is simply a large, lumpy, solid rock with a thin skin of grass stretched over it."</p>
+                <cite>Mark Twain</cite>
+            </blockquote>
+        </section>
+       
+        <section>
+            <form action="#" method="post">
+                <h2>Contact Us</h2>
+                <p>Need more information? Contact us today!</p>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" name="user-name" id="name">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" name="user-email" id="email">
+    
+                    <label for="message">Message:</label>
+                    <textarea name="user-message" id="message"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; Nazila Shadpour 2024</p>
+    </footer>
+</body>
+</html>
