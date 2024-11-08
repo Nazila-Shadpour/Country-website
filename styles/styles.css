@@ -295,6 +295,30 @@ input[type="submit"] {
 	margin: 0 auto;
 }
 
+
+
+
+/* Credits------------------------------------------- */
+.table-section {
+padding: 2rem;
+	
+	
+}
+.table-section table {
+	border: 1px solid #000000;
+	/* border-collapse: collapse; */
+	margin: 1rem auto;
+	width: 100%;
+	/* background-color: #3a5332; */
+	box-shadow: 0 4px 8px #86d48d;
+	border-radius: 1rem;
+	max-width: 50rem;
+}
+
+  .table-section tr:nth-child(even) {
+	background-color: #e2dede;
+  }
+
 /* Footer------------------------------------------ */
 .site-footer {
 	display: flex;
