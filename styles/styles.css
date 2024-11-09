@@ -264,26 +264,59 @@ a:active {
 
 /* Flex - link to another pages--------------------- */
 .card {
+	position: relative;
 	max-width: 25rem;
+	height: 45rem;
 	margin: 2rem auto;
 	box-shadow: 0 4px 8px #86d48d;
-	/* box-shadow: 5px 10px 10px #e9c9c9; */
 	border-radius: 1.5rem;
 	overflow: hidden; /*for rounding the aricles*/
 }
 
 .card img {
 	border-radius: inherit; /*for rounding the aricles*/
-	height: 19rem;
 }
 
 .card-text {
 	padding: 1rem;
-	text-align: center;
-	position: relative;
-	min-height: 15.5rem;
 }
 
+.card-name {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.card-description {
+	/* font-size: 1.25rem; */
+}
+
+a.card-link {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: #362d2d;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 1rem;	
+}
+
+a.card-link:hover,
+a.card-link:focus,
+a.card-link:active {
+	background-color: #843E61;
+}
+
+a.card-link:focus {
+	outline: 1px dotted #008000;
+}
+
+.section-cards h2 {
+	font-size: 2rem;
+	text-align: center;
+}
 
 @media (min-width: 50em) {
 
@@ -297,7 +330,11 @@ a:active {
 		margin: 1rem;
 	}
 
+	.card img {
+		height: 19rem;
+	}
 }
+
 /* Contact us--------------------------------------- */
 form {
 	max-width: 480px;
@@ -358,7 +395,32 @@ input[type="submit"] {
 	margin: 0 auto;
 }
 
+/* Places-------------------------------------------- */
+.banner {
+	position: relative;
+}
 
+.banner h1 {
+	position: absolute;
+	bottom: 14.5rem;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	width: fit-content;
+	padding: 2rem 4rem;
+	margin: 0 auto;
+	color: #ffffff;
+	backdrop-filter: blur(4px);
+	clip-path: ellipse(45% 45% at 50% 50%);
+}
+
+.banner img {
+	display: block;
+	width: 100%;
+	height: 37.5rem;
+	object-fit: cover;
+	object-position: center bottom;
+}
 
 
 /* Credits------------------------------------------- */
