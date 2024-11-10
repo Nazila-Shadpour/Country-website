@@ -255,7 +255,7 @@ a:active {
 		justify-content: center;
 		/* grid-auto-rows: 1fr; */
 		gap: 2rem;
-		max-width: 1200px;
+		max-width: 1350px;
 		margin: 0 auto;
 		padding: 0 2rem;
 		/* align-items: stretch; */
@@ -263,6 +263,10 @@ a:active {
 }
 
 /* Flex - link to another pages--------------------- */
+.section-cards {
+	max-width: 1350px;
+	margin: 2rem auto;
+}
 .card {
 	position: relative;
 	max-width: 25rem;
@@ -271,10 +275,6 @@ a:active {
 	box-shadow: 0 4px 8px #86d48d;
 	border-radius: 1.5rem;
 	overflow: hidden; /*for rounding the aricles*/
-}
-
-.card img {
-	border-radius: inherit; /*for rounding the aricles*/
 }
 
 .card-text {
@@ -422,6 +422,38 @@ input[type="submit"] {
 	object-position: center bottom;
 }
 
+.places-information {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.section-cities {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.city{
+	max-width: 25rem;
+	margin: 2rem auto;
+	box-shadow: 0 4px 8px #86d48d;
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+
+.city-text {
+	padding: 1rem;
+}
+
+@media (min-width: 50em) {
+	.cities-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.city {
+		margin: 1rem;
+	}
+}
 
 /* Credits------------------------------------------- */
 .table-section {
