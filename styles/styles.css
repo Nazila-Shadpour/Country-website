@@ -87,7 +87,7 @@ a:active {
 /* Header styles */
 .site-header {
 	padding: 0 1rem;
-    background-color: #22311d;
+    background-color: #9eb5b3;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;  
@@ -97,14 +97,6 @@ a:active {
 	z-index: 2;
 	top: 0;
 }
-
-/* a.site-name {
-	font-family: Georgia, Times, "Times New Roman", serif;
-	font-size: 2rem;
-	font-weight: 700;
-	text-decoration: none;
-	color: #282828;
-} */
 
 .site-logo {
 	max-width: 6rem;
@@ -117,7 +109,7 @@ a:active {
 }
 
 .site-navigation ul {
-    background-color: #22311d;
+    background-color: #9eb5b3;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -136,7 +128,7 @@ a:active {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 1.5rem;
 	text-decoration: none;
-	color: #CFCFCF;
+	color: #000000;
     border: 4px solid transparent;
 }
 
@@ -151,11 +143,6 @@ a:active {
 	padding: 1rem;
 	/* z-index: 10; */
 }
-
-/* .menu-toggle:focus {
-	border: 0;
-	outline: 1px dotted;
-} */
 
 .site-navigation.toggled ul {
 	display: block;
@@ -186,7 +173,7 @@ a:active {
 	}
 
 	.site-navigation a:hover {
-		border-color: #CFCFCF;
+		border-color: #000000;
 		border-width: 4px;
 		border-radius: 20%;
 	  }
@@ -268,7 +255,7 @@ a:active {
 	max-width: 25rem;
 	height: 45rem;
 	margin: 2rem auto;
-	box-shadow: 0 4px 8px #86d48d;
+	box-shadow: 0 8px 8px #9eb5b3;
 	border-radius: 1.5rem;
 	overflow: hidden; /*for rounding the aricles*/
 }
@@ -302,7 +289,7 @@ a.card-link {
 a.card-link:hover,
 a.card-link:focus,
 a.card-link:active {
-	background-color: #843E61;
+	background-color: #3a5332;
 }
 
 a.card-link:focus {
@@ -327,7 +314,10 @@ a.card-link:focus {
 	}
 
 	.card img {
-		height: 19rem;
+		width: 100%;
+		max-height: 265px;
+		object-fit: cover;
+		/* flex-shrink: 0; */
 	}
 }
 
@@ -434,7 +424,7 @@ input[type="submit"] {
 .city {
 	max-width: 24rem;
 	margin: 2rem auto;
-	box-shadow: 0 4px 8px #86d48d;
+	box-shadow: 0 8px 8px #9eb5b3;
 	border-radius: 1.5rem;
 	overflow: hidden;
 }
@@ -462,13 +452,12 @@ padding: 2rem;
 
 .table-section table {
 	border: 1px solid #000000;
-	/* border-collapse: collapse; */
+	border-collapse: collapse;
 	margin: 1rem auto;
 	width: 100%;
-	/* background-color: #3a5332; */
-	box-shadow: 0 4px 8px #86d48d;
-	border-radius: 1rem;
+	box-shadow: 0 8px 8px #9eb5b3;
 	max-width: 50rem;
+	text-align: center;
 }
 
   .table-section tr:nth-child(even) {
@@ -521,11 +510,10 @@ padding: 2rem;
 	/* centers vertically */
 	align-items: center;
 	
-	background-color: #22311d;
+	background-color: #9eb5b3;
 	padding: 1rem;
-	/* height: 100px; */
 	font-weight: bold;
-	color: #CFCFCF;
+	color: #000000;
 }
 
 .site-footer p {
