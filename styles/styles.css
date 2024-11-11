@@ -17,7 +17,7 @@
 
 /* Typography ----------------------------------------------- */
 body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: "Playfair Display", Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
 	text-align: center;
@@ -215,13 +215,20 @@ a:active {
 /* Blockquote------------------------------------------ */
 .quote blockquote {
 	text-align: center;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.quote p {
+	font-size: 1.5rem;
+}
+
+.quote cite {
+	display: block;
+	margin-top: -0.5rem;
 }
 
 /* Grid - more info --------------------------------------------- */
-.info-box {	
-	
-}
-
 .info-box img {
 	display: block;
 	width: 100%;
@@ -234,14 +241,11 @@ a:active {
 	.information {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		/* grid-template-rows: auto; */
 		justify-content: center;
-		/* grid-auto-rows: 1fr; */
 		gap: 2rem;
 		max-width: 1350px;
 		margin: 0 auto;
-		padding: 0 2rem;
-		/* align-items: stretch; */
+		padding: 2rem;
 	}
 }
 
@@ -257,7 +261,7 @@ a:active {
 	margin: 2rem auto;
 	box-shadow: 0 8px 8px #9eb5b3;
 	border-radius: 1.5rem;
-	overflow: hidden; /*for rounding the aricles*/
+	overflow: hidden; /*for rounding the articles*/
 }
 
 .card-text {
@@ -447,22 +451,26 @@ input[type="submit"] {
 
 /* Credits Page style section */
 .table-section {
-padding: 2rem;	
-}
-
+	padding: 2rem;	
+	}
+	
 .table-section table {
 	border: 1px solid #000000;
 	border-collapse: collapse;
-	margin: 1rem auto;
+	margin: 2rem auto;
 	width: 100%;
 	box-shadow: 0 8px 8px #9eb5b3;
 	max-width: 50rem;
 	text-align: center;
 }
-
-  .table-section tr:nth-child(even) {
+	
+.table-section tr:nth-child(even) {
 	background-color: #e2dede;
-  }
+}
+
+.table-section table caption {
+	font-size: 1.5rem;
+}
 
 /* Food Page style section */
 
